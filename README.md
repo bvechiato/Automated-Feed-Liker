@@ -12,6 +12,6 @@ id = ''
 ```
 AND 
 ````
-passwd = ''
+passd = ''
 ````
 The program will do the rest.
