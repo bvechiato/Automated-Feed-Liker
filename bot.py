@@ -5,7 +5,7 @@ import time
 
 f = open("receipts.txt","a+")
 
-driver = webdriver.Chrome(executable_path='/Users/bia/Documents/chromedriver')
+driver = webdriver.Chrome(executable_path='')
 
 id = ''
 passd = ''
