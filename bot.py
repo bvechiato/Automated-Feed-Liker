@@ -21,8 +21,7 @@ def login():
 	password.send_keys(passd)
 	webdriver.ActionChains(driver).send_keys(Keys.ENTER).perform()
 	time.sleep(5)
-	driver.find_element_by_class_name("aOOlW").click()
-	webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+	driver.find_element_by_xpath("/html/body/div[3]/div/div/div[3]/button[2]").click()
 
 def record_time():
 	localtime = time.asctime(time.localtime(time.time()))
