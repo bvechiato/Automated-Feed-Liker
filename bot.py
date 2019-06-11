@@ -63,8 +63,11 @@ def liking():
 			else:
 				f.write("{} posts were found liked. Last by {}.\n".format(unliked, user))
 		else:
-			y = y + 200
-			driver.execute_script("window.scrollTo(0, %d)" % (y))
+			try:
+				y = y + 200
+				driver.execute_script("window.scrollTo(0, %d)" % (y))
+			except:
+				break
 
 login()
 record_time()
